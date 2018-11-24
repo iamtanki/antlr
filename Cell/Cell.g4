@@ -1,10 +1,10 @@
-grammer Cell
+grammar Cell;
 
 //语法
 prog :  stat+ ;
 
 stat : expr SEMI
-     | ID '=' expr ;
+     | ID '=' expr SEMI ;
 
 expr : expr ('*'|'/') expr
      | expr ('+'|'-') expr
