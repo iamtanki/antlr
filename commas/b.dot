@@ -1,0 +1,8 @@
+digraph G{
+
+        rankdir = TB;
+        main [shape=box];
+        main -> f -> g;
+        f -> f [style=dotted] ;
+        f -> h;
+}

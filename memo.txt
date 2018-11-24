@@ -1,0 +1,13 @@
+ANTLR4:  https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
+
+alias antlr4 = "java -jar /usr/local/lib/antlr-4.0-complete.jar"
+alias grun = "java org.antlr.v4.runtime.misc.TestRig" 调用编译后的识别程序，类似main函数，接受一个语法名和起始规则名作为参数
+
+   antlr4 [-Dlanguage=java] xxx.g4        首先生成 *.java 等 词法分析 语法分析器
+   javac *.java      编译java
+   grun [Hello 语法文件名] r[规则名] [-tokens 输出词法信息] [-tree 输出语法树] [-gui 可视化展示]
+   输入 语句， ctrl+D 则结束并输出
+
+
+程序中调用， 写一个类 import antlr , 只需要导入 之前生成的.java文件
+遍历语法树，可以先继承BaseListenner，出发回调的遍历器parseTreeWalker
