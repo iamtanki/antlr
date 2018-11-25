@@ -10,4 +10,4 @@ import commonLexerRules;
 
 file : {startFile();} prop+ {finishFile();} ;
 
-prop : ID '=' STRING '\n' {defineProperty($ID, $STRING)} ;
+prop : ID '=' STRING ';' {defineProperty($ID, $STRING);} ;

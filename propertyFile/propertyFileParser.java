@@ -25,7 +25,7 @@ public class propertyFileParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'='", "'\n'"
+		null, "'='", "';'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, null, null, "ID", "INT", "FLOAT", "STRING", "LINE_COMMENT", "COMMENT", 
@@ -175,7 +175,7 @@ public class propertyFileParser extends Parser {
 			((PropContext)_localctx).STRING = match(STRING);
 			setState(15);
 			match(T__1);
-			defineProperty(((PropContext)_localctx).ID, ((PropContext)_localctx).STRING)
+			defineProperty(((PropContext)_localctx).ID, ((PropContext)_localctx).STRING);
 			}
 		}
 		catch (RecognitionException re) {
