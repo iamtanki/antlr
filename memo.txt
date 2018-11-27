@@ -11,4 +11,3 @@ alias grun = "java org.antlr.v4.runtime.misc.TestRig" 调用编译后的识别�
 
 程序中调用， 写一个类 import antlr , 只需要导入 之前生成的.java文件
 遍历语法树，可以先继承BaseListenner，出发回调的遍历器parseTreeWalker
-
