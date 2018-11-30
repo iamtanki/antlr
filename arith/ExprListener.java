@@ -27,13 +27,63 @@ public interface ExprListener extends ParseTreeListener {
 	 */
 	void exitStat(ExprParser.StatContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ExprParser#expr}.
+	 * Enter a parse tree produced by the {@code Add}
+	 * labeled alternative in {@link ExprParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr(ExprParser.ExprContext ctx);
+	void enterAdd(ExprParser.AddContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ExprParser#expr}.
+	 * Exit a parse tree produced by the {@code Add}
+	 * labeled alternative in {@link ExprParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr(ExprParser.ExprContext ctx);
+	void exitAdd(ExprParser.AddContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Parenthesis}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterParenthesis(ExprParser.ParenthesisContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Parenthesis}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitParenthesis(ExprParser.ParenthesisContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Mult}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterMult(ExprParser.MultContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Mult}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitMult(ExprParser.MultContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Id}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterId(ExprParser.IdContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Id}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitId(ExprParser.IdContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Int}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterInt(ExprParser.IntContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Int}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitInt(ExprParser.IntContext ctx);
 }
