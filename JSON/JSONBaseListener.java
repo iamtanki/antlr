@@ -1,135 +1,135 @@
-// Generated from cymbol.g4 by ANTLR 4.7.1
+// Generated from JSON.g4 by ANTLR 4.7.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link cymbolListener},
+ * This class provides an empty implementation of {@link JSONListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class cymbolBaseListener implements cymbolListener {
+public class JSONBaseListener implements JSONListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFile(cymbolParser.FileContext ctx) { }
+	@Override public void enterJson(JSONParser.JsonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFile(cymbolParser.FileContext ctx) { }
+	@Override public void exitJson(JSONParser.JsonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVarDecl(cymbolParser.VarDeclContext ctx) { }
+	@Override public void enterAnObject(JSONParser.AnObjectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVarDecl(cymbolParser.VarDeclContext ctx) { }
+	@Override public void exitAnObject(JSONParser.AnObjectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterType(cymbolParser.TypeContext ctx) { }
+	@Override public void enterEmptyObject(JSONParser.EmptyObjectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitType(cymbolParser.TypeContext ctx) { }
+	@Override public void exitEmptyObject(JSONParser.EmptyObjectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncDecl(cymbolParser.FuncDeclContext ctx) { }
+	@Override public void enterArrayOfValues(JSONParser.ArrayOfValuesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncDecl(cymbolParser.FuncDeclContext ctx) { }
+	@Override public void exitArrayOfValues(JSONParser.ArrayOfValuesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFormalParameters(cymbolParser.FormalParametersContext ctx) { }
+	@Override public void enterEmptyArray(JSONParser.EmptyArrayContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFormalParameters(cymbolParser.FormalParametersContext ctx) { }
+	@Override public void exitEmptyArray(JSONParser.EmptyArrayContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFormalParameter(cymbolParser.FormalParameterContext ctx) { }
+	@Override public void enterPair(JSONParser.PairContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFormalParameter(cymbolParser.FormalParameterContext ctx) { }
+	@Override public void exitPair(JSONParser.PairContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlock(cymbolParser.BlockContext ctx) { }
+	@Override public void enterString(JSONParser.StringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlock(cymbolParser.BlockContext ctx) { }
+	@Override public void exitString(JSONParser.StringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStat(cymbolParser.StatContext ctx) { }
+	@Override public void enterAtom(JSONParser.AtomContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStat(cymbolParser.StatContext ctx) { }
+	@Override public void exitAtom(JSONParser.AtomContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr(cymbolParser.ExprContext ctx) { }
+	@Override public void enterObjectValue(JSONParser.ObjectValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr(cymbolParser.ExprContext ctx) { }
+	@Override public void exitObjectValue(JSONParser.ObjectValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExprList(cymbolParser.ExprListContext ctx) { }
+	@Override public void enterArrayValue(JSONParser.ArrayValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExprList(cymbolParser.ExprListContext ctx) { }
+	@Override public void exitArrayValue(JSONParser.ArrayValueContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
