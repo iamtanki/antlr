@@ -6,7 +6,7 @@ varDecl : type ID ('=' expr)? ';' ;
 
 type : 'float' | 'int' | 'void' ;
 
-funcDecl : type ID '(' formalParameters ')' block ;
+funcDecl : type ID '(' formalParameters? ')' block ;
 
 formalParameters : formalParameter (',' formalParameter)* ;
 
@@ -18,10 +18,18 @@ stat : block  | varDecl | 'if' expr 'then' stat ('else' stat)?
 	| 'return' expr? ';' | expr '=' expr ';' | expr ';'
     ;
 
-expr : ID '(' exprList? ')' | expr '[' expr ']' | '-' expr | '!' expr
-		| expr '*' expr | expr ('+'|'-') expr | expr '==' expr
-		| ID | INT | '(' expr ')'
-        ;
+expr :
+     ID '(' exprList? ')'       # Call
+     | expr '[' expr ']'        # Index
+     | '-' expr                 # Negate
+     | '!' expr                 # Not
+	 | expr '*' expr            # Mult
+     | expr ('+'|'-') expr      # AddSub
+     | expr '==' expr           # Equal
+	 | ID                       # Var
+     | INT                      # Int
+     | '(' expr ')'             # Parens
+     ;
 
 exprList : expr (',' expr )* ;
 
