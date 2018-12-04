@@ -1,11 +1,34 @@
 grammar GE;
 
-file : TEXT* ;
+file : headers layers 'End' ;
 
-EQ : '=' -> skip;
+headers : head+ ;
 
-TEXT : (~[=\r\n])+ ;
+head :
+       TEXT LINE
+     | TEXT EQ TEXT LINE
+     | TEXT EQ LINE
+     | EQ TEXT LINE
+     | LINE
+     ;
 
+layers : layer+ ;
+
+layer : LAYER ID* LINE* ;
+
+
+LAYER : 'Layer' ;
+LAYEREND : 'LayerEnd' ;
+
+EQ : '=' ;
+
+TEXT : ~[=\r\n]+ ;
+
+ID : ID_LETTER (ID_LETTER | DIGIT)* ;
+fragment ID_LETTER : [a-zA-Z|_] ;
+fragment DIGIT : [0-9] ;
+
+
+// LINE : ('\r\n'|'r'|'\n')+ ;
 LINE : '\r'? '\n' ;
-
-WS : [ \t\r\n]+ -> skip ;
+WS : [ \t]+ -> skip ;

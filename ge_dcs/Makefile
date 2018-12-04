@@ -1,3 +1,7 @@
+# Install
+install:
+	javac *.java
+
 # Clean up
 clean:
 	rm -f  *.o  *.interp *.tokens
