@@ -16,7 +16,7 @@ public class GEParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, LAYER=2, LAYEREND=3, EQ=4, TEXT=5, ID=6, LINE=7, WS=8;
+		T__0=1, LAYER=2, LAYEREND=3, EQ=4, WS=5, LINE=6, ID=7, TEXT=8;
 	public static final int
 		RULE_file = 0, RULE_headers = 1, RULE_head = 2, RULE_layers = 3, RULE_layer = 4;
 	public static final String[] ruleNames = {
@@ -27,7 +27,7 @@ public class GEParser extends Parser {
 		null, "'End'", "'Layer'", "'LayerEnd'", "'='"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, "LAYER", "LAYEREND", "EQ", "TEXT", "ID", "LINE", "WS"
+		null, null, "LAYER", "LAYEREND", "EQ", "WS", "LINE", "ID", "TEXT"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -165,7 +165,7 @@ public class GEParser extends Parser {
 				setState(17); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << EQ) | (1L << TEXT) | (1L << LINE))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << EQ) | (1L << LINE) | (1L << TEXT))) != 0) );
 			}
 		}
 		catch (RecognitionException re) {
@@ -408,12 +408,12 @@ public class GEParser extends Parser {
 		"\6\65\13\6\3\6\2\2\7\2\4\6\b\n\2\2\29\2\f\3\2\2\2\4\21\3\2\2\2\6\"\3\2"+
 		"\2\2\b%\3\2\2\2\n)\3\2\2\2\f\r\5\4\3\2\r\16\5\b\5\2\16\17\7\3\2\2\17\3"+
 		"\3\2\2\2\20\22\5\6\4\2\21\20\3\2\2\2\22\23\3\2\2\2\23\21\3\2\2\2\23\24"+
-		"\3\2\2\2\24\5\3\2\2\2\25\26\7\7\2\2\26#\7\t\2\2\27\30\7\7\2\2\30\31\7"+
-		"\6\2\2\31\32\7\7\2\2\32#\7\t\2\2\33\34\7\7\2\2\34\35\7\6\2\2\35#\7\t\2"+
-		"\2\36\37\7\6\2\2\37 \7\7\2\2 #\7\t\2\2!#\7\t\2\2\"\25\3\2\2\2\"\27\3\2"+
+		"\3\2\2\2\24\5\3\2\2\2\25\26\7\n\2\2\26#\7\b\2\2\27\30\7\n\2\2\30\31\7"+
+		"\6\2\2\31\32\7\n\2\2\32#\7\b\2\2\33\34\7\n\2\2\34\35\7\6\2\2\35#\7\b\2"+
+		"\2\36\37\7\6\2\2\37 \7\n\2\2 #\7\b\2\2!#\7\b\2\2\"\25\3\2\2\2\"\27\3\2"+
 		"\2\2\"\33\3\2\2\2\"\36\3\2\2\2\"!\3\2\2\2#\7\3\2\2\2$&\5\n\6\2%$\3\2\2"+
-		"\2&\'\3\2\2\2\'%\3\2\2\2\'(\3\2\2\2(\t\3\2\2\2)-\7\4\2\2*,\7\b\2\2+*\3"+
-		"\2\2\2,/\3\2\2\2-+\3\2\2\2-.\3\2\2\2.\63\3\2\2\2/-\3\2\2\2\60\62\7\t\2"+
+		"\2&\'\3\2\2\2\'%\3\2\2\2\'(\3\2\2\2(\t\3\2\2\2)-\7\4\2\2*,\7\t\2\2+*\3"+
+		"\2\2\2,/\3\2\2\2-+\3\2\2\2-.\3\2\2\2.\63\3\2\2\2/-\3\2\2\2\60\62\7\b\2"+
 		"\2\61\60\3\2\2\2\62\65\3\2\2\2\63\61\3\2\2\2\63\64\3\2\2\2\64\13\3\2\2"+
 		"\2\65\63\3\2\2\2\7\23\"\'-\63";
 	public static final ATN _ATN =

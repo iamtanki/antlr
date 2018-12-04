@@ -22,13 +22,12 @@ LAYEREND : 'LayerEnd' ;
 
 EQ : '=' ;
 
-TEXT : ~[=\r\n]+ ;
+WS : [ \t]+ -> skip ;
+
+LINE : '\r'? '\n' ;
 
 ID : ID_LETTER (ID_LETTER | DIGIT)* ;
 fragment ID_LETTER : [a-zA-Z|_] ;
 fragment DIGIT : [0-9] ;
 
-
-// LINE : ('\r\n'|'r'|'\n')+ ;
-LINE : '\r'? '\n' ;
-WS : [ \t]+ -> skip ;
+TEXT : ~[=\r\n]+ ;
