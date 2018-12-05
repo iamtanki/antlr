@@ -1,9 +1,10 @@
 # Install
-install:
+in:
+	java -jar /usr/local/lib/antlr-4.7.1-complete.jar GE.g4
 	javac *.java
 
 # Clean up
-clean:
+cl:
 	rm -f  *.o  *.interp *.tokens
 	rm -f  *.java *.class
 	rm -f  *.js
