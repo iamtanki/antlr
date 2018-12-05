@@ -5,7 +5,10 @@ file : layer+ END ;
 
 layer : LAYER ID objs LAYEREND ;
 
-objs : OBJSTART   OBJEND ;
+objs : OBJSTART expr*  OBJEND ;
+
+expr :
+       ID EQ 
 
 // 词法
 LAYER : 'Layer' ;
