@@ -1,27 +1,30 @@
 grammar GE;
 
 // 语法
-file : layer+ END ;
+file : layer+ LINE* END LINE*;
 
-layer : LAYER ID objs LAYEREND ;
+layer : LAYER ID LINE* objs* LINE* LAYEREND LINE*;
 
-objs : OBJSTART expr*  OBJEND ;
+objs : OBJSTART LINE* expr* LINE* OBJEND LINE* ;
 
 expr :
-       ID EQ 
+       ID EQ TEXT LINE ;
 
 // 词法
 LAYER : 'Layer' ;
 LAYEREND : 'LayerEnd' ;
-OBJSTART : 'Obj' ID ;
+OBJSTART : 'ObjAlmHis' ;
 OBJEND : 'ObjEnd' ;
 END : 'END' ;
 EQ : '=' ;
 
+ID : [a-zA-Z]+ ;
+
 LINE : '\r'? '\n' ;
 
-WS : [\t\r\n]+ -> skip ;
+WS : (' ' | '\t' | '\r')+ -> skip ;
 
-ID : ID_LETTER (ID_LETTER | DIGIT)* ;
-fragment ID_LETTER : [a-zA-Z|_] ;
-fragment DIGIT : [0-9] ;
+WSLINE : [ \t]* '\r'? '\n' -> skip;
+
+
+TEXT : ~[\r\n]+? ;

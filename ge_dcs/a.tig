@@ -1,16 +1,5 @@
-Layer def
+Layer test
 ObjAlmHis
-	Stc = pt0(-10,-10),sz(4030,1290)
-	Filter = TypeSel(1,1,1,0,0,0,0)
-	TZ = *.*.*.*.*
-	AlmGrp = *.*.*.*.*
-ObjEnd
-ObjPoke
-	UpT = 0
-	Cmd = MMI WinExec almhis Nt=off, Op=OFF, Re=OFF
-	Stc = pt0(-10,-10),sz(4160,1310),Poke,Up,3
-	UP = 0,
-	Translate = 0
 ObjEnd
 LayerEnd
 
