@@ -5,7 +5,7 @@ in:
 
 # view
 vi:
-	java org.antlr.v4.gui.TestRig GE file -gui a.tig
+	java org.antlr.v4.gui.TestRig GE file -gui test.tig
 
 # Clean up
 cl:

@@ -1,29 +1,39 @@
 grammar GE;
 
 // 语法
-file : layer+ LINE* END LINE*;
+file :  layer+ END;
 
-layer : LINE* LAYERDEF LINE* objs* LINE* LAYEREND LINE*;
+layer : layerdef objs  layerend;
 
-objs : LINE* OBJSTART LINE* expr* LINE* OBJEND LINE* ;
+objs : obj* ;
+
+obj : objstart expr*  objend ;
 
 expr :
-      LINE* ID EQ TEXT LINE* ;
+      TEXT LINE* ;
+
+layerend : LAYEREND LINE;
+layerdef : LAYERDEF LINE;
+
+objend : OBJEND ;
+objstart : OBJSTART ;
+
 
 // 词法
-LAYERDEF : 'Layer' ID ;
+
 LAYEREND : 'LayerEnd' ;
-OBJSTART : 'Obj' ID ;
-OBJEND : 'ObjEnd' ;
-END : 'END' ;
+LAYERDEF : 'Layer' WS+ ID ;
+
+OBJEND : 'ObjEnd' LINE* ;
+OBJSTART : 'Obj' ID LINE* ;
+
+END : 'END' LINE*;
 EQ : '=' ;
 
 ID : [a-zA-Z]+ ;
 
 LINE : '\r'? '\n' ;
 
-WS : ('\t')+ -> skip ;
+WS : ('\t' | ' ')+ -> skip ;
 
-WSLINE : [ \t]* '\r'? '\n' -> skip;
-
-TEXT : ~[\r\n]+? ;
+TEXT : (~[\r\n]+?)+ ;

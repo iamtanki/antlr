@@ -1,0 +1,17 @@
+Layer def
+ObjLine
+UpT = 0
+Stc = pt1(10812,8018),pt2(10815,6147),Pen(0,50,RGB[0,255,255])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjText
+UpT = 0
+Str = "D72AI1104"
+Fnt = 200,0,0,0,0,0,宋体
+Stc = pt0(7869,3438),sz(900,200),Pen(RGB[255,0,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,0,0,D72AI1104
+ObjEnd
+LayerEnd
+End
