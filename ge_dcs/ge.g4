@@ -3,17 +3,17 @@ grammar GE;
 // 语法
 file : layer+ LINE* END LINE*;
 
-layer : LAYER ID LINE* objs* LINE* LAYEREND LINE*;
+layer : LINE* LAYERDEF LINE* objs* LINE* LAYEREND LINE*;
 
-objs : OBJSTART LINE* expr* LINE* OBJEND LINE* ;
+objs : LINE* OBJSTART LINE* expr* LINE* OBJEND LINE* ;
 
 expr :
-       ID EQ TEXT LINE ;
+      LINE* ID EQ TEXT LINE* ;
 
 // 词法
-LAYER : 'Layer' ;
+LAYERDEF : 'Layer' ID ;
 LAYEREND : 'LayerEnd' ;
-OBJSTART : 'ObjAlmHis' ;
+OBJSTART : 'Obj' ID ;
 OBJEND : 'ObjEnd' ;
 END : 'END' ;
 EQ : '=' ;
@@ -22,9 +22,8 @@ ID : [a-zA-Z]+ ;
 
 LINE : '\r'? '\n' ;
 
-WS : (' ' | '\t' | '\r')+ -> skip ;
+WS : ('\t')+ -> skip ;
 
 WSLINE : [ \t]* '\r'? '\n' -> skip;
-
 
 TEXT : ~[\r\n]+? ;
