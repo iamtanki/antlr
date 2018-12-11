@@ -10,24 +10,20 @@ objs : obj* ;
 obj : objstart expr*  objend ;
 
 expr :
-       obj
-     | upt
-     | TEXT LINE ;
+        obj
+      | TEXT LINE
+     ;
 
-upt : UPT WS* EQ WS* TEXT LINE ;
-
-layerend : LAYEREND LINE;
-layerdef : LAYERDEF LINE;
+layerend : LAYEREND LINE ;
+layerdef : LAYERDEF LINE ;
 
 objend : OBJEND LINE ;
 objstart : OBJSTART LINE ;
 
-end : END LINE* ;
 
 // 词法
-END : 'END' ;
 
-UPT : [uU][pP][tT] ;
+EQ : '=' ;
 
 LAYEREND : 'LayerEnd' ;
 LAYERDEF : 'Layer' WS+ ID ;
@@ -35,7 +31,6 @@ LAYERDEF : 'Layer' WS+ ID ;
 OBJEND : 'ObjEnd' ;
 OBJSTART : 'Obj' ID  ;
 
-EQ : '=' ;
 
 ID : [a-zA-Z]+ ;
 

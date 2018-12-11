@@ -1,0 +1,7 @@
+Layer def
+ObjLine
+UpT = 0
+Stc = pt1(10812,8018),pt2(10815,6147),Pen(0,50,RGB[0,255,255])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+LayerEnd
