@@ -39,7 +39,7 @@ NUMBER
     |   '-'? INT EXP
     |   '-'? INT
     ;
-fragment INT :   '0' | '1'..'9' '0'..'9'* ; 
-fragment EXP :   [Ee] [+\-]? INT ; 
+fragment INT :   '0' | '1'..'9' '0'..'9'* ;
+fragment EXP :   [Ee] [+\-]? INT ;
 
 WS  :   [ \t\n\r]+ -> skip ;
