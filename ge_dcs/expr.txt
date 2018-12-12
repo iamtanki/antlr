@@ -1,8 +1,7 @@
-Para =
-Para =
-Para = $02VC\n
+Stc = 3,Pen(0,0,RGB[160,0,0]),Brush(0,RGB[160,0,0]),NoClip
+Pnt = (0,98),(273,48),(0,0)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
 UpT = 0
-Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@抽汽快速关断阀(主) NULL MV4601-VC 11 82.1
-Stc = pt0(9150,2940),sz(740,490),Poke,Up,1
-UP = 0,
-Translate = 0
+Stc = Open,NoClip,3,Pen(0,0,RGB[160,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (0,48),Line,(135,48),Line,(135,48),Line

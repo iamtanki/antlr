@@ -3,21 +3,25 @@ grammar GE_Expr ;
 // 语法
 prog : assign+ ;
 
-assign : ID WS* EQ WS* ( expr (WS* ',' WS* expr)* )? LINE ;
+assign : id WS* EQ WS* ( expr (WS* ',' WS* expr)* )? LINE ;
 
 expr :
-     EXID ('(' exprList? ')')?       # Call
-     | RGB '[' exprList? ']'     # Index
-     | INT                      # Int
-     | STRING                   # String
-     | text+                     # Wenben
-     |                           #Empty
+       id WS* (parenthesis)?                         # Call
+     | RGB '[' exprList? ']'                       # Index
+     | parenthesis                                  # Paren
+     | INT                                         # Int
+     | STRING                                      # String
+     | text+                                       # Wenben
+     |                                             #Empty
      ;
+
+id : EXID | ID ;
+
+parenthesis : WS* '(' WS* exprList? WS* ')' ; 
 
 exprList : expr (WS* ',' WS* expr )*  ;
 
-text : (~(LINE|ID|EQ|EXID|RGB|STRING|','|'('|')') | CC )+ ;
-//text : CC+ ;
+text : (~(LINE|',') | CC )+ ;
 
 // 词法
 EQ : '=' ;
@@ -27,7 +31,7 @@ RGB : [rR][gG][bB] ;
 
 EXID :
        [pP][eE][nN]
-     | 'Up'
+     | [uU][pP]
      | [pP][tT]INT
      | [pP][oO][kK][eE]
      | [cC][oO][lL][oO][rR]INT
@@ -40,12 +44,13 @@ EXID :
 
 ID :
      [uU][pP][tT]
-   | 'UP'
+   | [uU][pP]
    | [bB][mM][pP]
    | [cC][mM][dD]
    | [sS][tT][cC]
    | [aA][cC][cC]
    | [pP][aA][rR][aA]
+   | [pP[nN][tT]
    | [fF][nN][tT]
    | [dD][yY][nN]
    | [aA][uU][tT][oO][wW][rR][aA][pP]
