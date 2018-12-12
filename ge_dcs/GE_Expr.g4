@@ -3,27 +3,46 @@ grammar GE_Expr ;
 // 语法
 prog : assign+ ;
 
-assign : ID  EQ  ( expr (',' expr)* )* LINE ;
+assign : ID WS* EQ WS* ( expr (WS* ',' WS* expr)* )? LINE ;
 
 expr :
-     EXID '(' exprList? ')'       # Call
-     | expr '[' expr ']'        # Index
-     | '-' expr                 # Negate
-     | '!' expr                 # Not
-	 | ID                       # Var
+     EXID ('(' exprList? ')')?       # Call
+     | RGB '[' exprList? ']'     # Index
      | INT                      # Int
-     | '(' expr ')'             # Parens
-//     | TEXT                     # Text
+     | STRING                   # String
+     | text+                     # Wenben
+     |                           #Empty
      ;
 
-exprList : expr (',' expr )* ;
+exprList : expr (WS* ',' WS* expr )*  ;
+
+text : (~(LINE|ID|EQ|EXID|RGB|STRING|','|'('|')') | CC )+ ;
+//text : CC+ ;
 
 // 词法
 EQ : '=' ;
 STRING :  '"' .*? '"' ;
 
+RGB : [rR][gG][bB] ;
+
+EXID :
+       [pP][eE][nN]
+     | 'Up'
+     | [pP][tT]INT
+     | [pP][oO][kK][eE]
+     | [cC][oO][lL][oO][rR]INT
+     | [aA][rR][rR][oO][wW]
+     | [sS][zZ]
+     | [rR][mM]
+     | [bB][rR][uU][sS][hH]
+     ;
+
+
 ID :
      [uU][pP][tT]
+   | 'UP'
+   | [bB][mM][pP]
+   | [cC][mM][dD]
    | [sS][tT][cC]
    | [aA][cC][cC]
    | [pP][aA][rR][aA]
@@ -34,15 +53,12 @@ ID :
    | [sS][tT][rR]
    ;
 
+INT: [+-]?[0-9]+ ;
 
-EXID : ID_LETTER (ID_LETTER | DIGIT)* ;
-fragment ID_LETTER : [a-zA-Z|_] ;
-fragment DIGIT : [0-9];
+LINE : '\r' '\n' | '\n' ;
 
-INT: [0-9]+ ;
+WS : [ \t]+  ;
 
-LINE : '\r'? '\n' ;
+CC : (.)+? ;
 
-// TEXT : (~[,\r\n]+?)+ ;
-
-WS : [ \t]+ -> skip ;
+//TEXT : ~[,\r\n]+ ;

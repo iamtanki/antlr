@@ -5,7 +5,7 @@ in:
 
 # view
 vi:
-	java org.antlr.v4.gui.TestRig GE_Expr prog -gui expr.txt
+	java org.antlr.v4.gui.TestRig GE_Expr prog -gui  expr.txt
 
 # Clean up
 cl:
