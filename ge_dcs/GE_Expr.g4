@@ -38,6 +38,9 @@ EXID :
      | [uU][pP]
      | [pP][tT]INT
      | [pP][oO][kK][eE]
+     | [bB][uU][tT][tT][oO][nN]
+     | [bB][kK][cC][oO][lL][oO][rR]
+     | [tT][eE][xX][tT][cC][oO][lL][oO][rR]
      | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT
      | [cC][oO][lL][oO][rR]INT
      | [aA][rR][rR][oO][wW]
@@ -54,6 +57,7 @@ ID :
    | [uU][pP]
    | [fF][iI][lL][lL][bB][mM][pP]
    | [bB][mM][pP]
+   | [bB][uU][tT]
    | [cC][mM][dD]
    | [sS][tT][cC]
    | [aA][cC][cC]
