@@ -5,7 +5,7 @@ in:
 
 # view
 vi:
-	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE_Expr prog -gui  expr.txt
+	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE_Expr prog -gui  test.tree
 
 # Clean up
 cl:

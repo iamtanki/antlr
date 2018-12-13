@@ -2891,5 +2891,5 @@ Translate = 0
 UpT = 0
 Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@抽汽快速关断阀(主) NULL MV4601-VC 11 82.1
 Stc = pt0(9150,2940),sz(740,490),Poke,Up,1
-UP = 0,
+UP = 0,tanqi, +12.344, 10e123, pt1(haha, "123",123)
 Translate = 0

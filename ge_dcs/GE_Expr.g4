@@ -6,18 +6,22 @@ prog : assign+ ;
 assign : id WS* EQ WS* ( expr (WS* ',' WS* expr)* )? LINE ;
 
 expr :
-       id WS* (parenthesis)?                         # Call
+       id WS* '(' exprList? ')'                        # Call
      | RGB '[' exprList? ']'                       # Index
      | parenthesis                                  # Paren
-     | INT                                         # Int
+     | number                                         # Num
      | STRING                                      # String
      | text+                                       # Wenben
      |                                             #Empty
      ;
 
-id : EXID | ID ;
+id :
+     ID
+   | EXID ;
 
-parenthesis : WS* '(' WS* exprList? WS* ')' ; 
+number : NUMBER ;
+
+parenthesis : WS* '(' WS* exprList? WS* ')' ;
 
 exprList : expr (WS* ',' WS* expr )*  ;
 
@@ -34,23 +38,28 @@ EXID :
      | [uU][pP]
      | [pP][tT]INT
      | [pP][oO][kK][eE]
+     | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT
      | [cC][oO][lL][oO][rR]INT
      | [aA][rR][rR][oO][wW]
      | [sS][zZ]
      | [rR][mM]
      | [bB][rR][uU][sS][hH]
+     | [tT][oO][pP]
+     | [bB][aA][sS][eE]
      ;
 
 
 ID :
      [uU][pP][tT]
    | [uU][pP]
+   | [fF][iI][lL][lL][bB][mM][pP]
    | [bB][mM][pP]
    | [cC][mM][dD]
    | [sS][tT][cC]
    | [aA][cC][cC]
+   | [pP][rR][oO][nN]
+   | [pP][nN][tT]
    | [pP][aA][rR][aA]
-   | [pP[nN][tT]
    | [fF][nN][tT]
    | [dD][yY][nN]
    | [aA][uU][tT][oO][wW][rR][aA][pP]
@@ -58,7 +67,10 @@ ID :
    | [sS][tT][rR]
    ;
 
-INT: [+-]?[0-9]+ ;
+NUMBER : [+-]? INT '.' INT EXP? | [+-]? INT EXP? ;
+fragment EXP : [eE] [+-]? INT ;
+
+INT: [0-9]+ ;
 
 LINE : '\r' '\n' | '\n' ;
 
