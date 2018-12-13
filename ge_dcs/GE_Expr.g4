@@ -7,7 +7,7 @@ assign : id WS* EQ WS* ( expr (WS* ',' WS* expr)* )? LINE ;
 
 expr :
        id WS* '(' exprList? ')'                        # Call
-     | RGB '[' exprList? ']'                       # Index
+     | RGB '[' exprList? ']'                       # Rgb
      | parenthesis                                  # Paren
      | number                                         # Num
      | STRING                                      # String
@@ -16,14 +16,15 @@ expr :
      ;
 
 id :
-     ID
-   | EXID ;
+     ID         # Identy
+   | EXID       # Exid
+   ;
 
 number : NUMBER ;
 
 parenthesis : WS* '(' WS* exprList? WS* ')' ;
 
-exprList : expr (WS* ',' WS* expr )*  ;
+exprList : expr (WS* ',' WS* expr )* ;
 
 text : (~(LINE|',') | CC )+ ;
 
@@ -34,21 +35,21 @@ STRING :  '"' .*? '"' ;
 RGB : [rR][gG][bB] ;
 
 EXID :
-       [pP][eE][nN]
-     | [uU][pP]
-     | [pP][tT]INT
-     | [pP][oO][kK][eE]
-     | [bB][uU][tT][tT][oO][nN]
-     | [bB][kK][cC][oO][lL][oO][rR]
-     | [tT][eE][xX][tT][cC][oO][lL][oO][rR]
-     | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT
-     | [cC][oO][lL][oO][rR]INT
-     | [aA][rR][rR][oO][wW]
-     | [sS][zZ]
-     | [rR][mM]
-     | [bB][rR][uU][sS][hH]
-     | [tT][oO][pP]
-     | [bB][aA][sS][eE]
+       [pP][eE][nN]                                // # Pen
+     | [uU][pP]                                    // # Up
+     | [pP][tT]INT                                 // # Pt
+     | [pP][oO][kK][eE]                            // # Poke
+     | [bB][uU][tT][tT][oO][nN]                    // # Btn
+     | [bB][kK][cC][oO][lL][oO][rR]                // # BkColor
+     | [tT][eE][xX][tT][cC][oO][lL][oO][rR]        // # TxtColor
+     | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT     // # FillColor
+     | [cC][oO][lL][oO][rR]INT                     // # Color
+     | [aA][rR][rR][oO][wW]                        // # Arrow
+     | [sS][zZ]                                    // # Sz
+     | [rR][mM]                                    // # Rm
+     | [bB][rR][uU][sS][hH]                        // # Brush
+     | [tT][oO][pP]                                // # Top
+     | [bB][aA][sS][eE]                            // # Base
      ;
 
 
