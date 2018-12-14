@@ -6,7 +6,7 @@ prog : assign+ ;
 assign : id WS* EQ WS* ( expr (WS* ',' WS* expr)* )? LINE ;
 
 expr :
-       id WS* '(' exprList? ')'                        # Call
+       EXID WS* '(' exprList? ')'                        # Call
      | RGB '[' exprList? ']'                       # Rgb
      | parenthesis                                  # Paren
      | number                                         # Num
@@ -16,9 +16,9 @@ expr :
      ;
 
 id :
-     ID         # Identy
-   | EXID       # Exid
-   ;
+    ID         # Identy
+  | EXID       # Exid
+  ;
 
 number : NUMBER ;
 
