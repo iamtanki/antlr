@@ -6,7 +6,7 @@ in:
 
 # view
 vi:
-#	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE file -gui  F.tree
+#	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE file -gui  ff.tree
 	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE_Expr prog -gui  Ftest.tree
 
 # Clean up

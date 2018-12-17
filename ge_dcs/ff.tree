@@ -1,0 +1,45 @@
+Layer def
+ObjGroup
+	UpT = 0
+	Stc = pt0(12145,5391),sz(430,1464)
+ObjRectangle
+	UpT = 0
+	Stc = pt0(0,0),sz(430,1464),Pen(0,20,RGB[255,0,255]),Brush(0,RGB[0,0,255]),0
+	Acc = Color2(RGB[255,255,255])
+	Bmp = ""
+ObjEnd
+ObjGroup
+	UpT = 0
+	Stc = pt0(20,82),sz(389,1275)
+ObjGroup
+	UpT = 0
+	Stc = pt0(322,1025),sz(67,245)
+ObjEllipse
+	UpT = 0
+	Stc = pt0(0,10),sz(61,231),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[128,0,0]),0
+	Acc = Color2(RGB[255,255,255])
+	Bmp = ""
+ObjEnd
+ObjEllipse
+	UpT = 0
+	Stc = pt0(0,19),sz(58,222),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[159,0,0]),0
+	Acc = Color2(RGB[255,255,255])
+	Bmp = ""
+ObjEnd
+ObjEllipse
+	UpT = 0
+	Stc = pt0(0,30),sz(57,211),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[191,0,0]),0
+	Acc = Color2(RGB[255,255,255])
+	Bmp = ""
+ObjEnd
+ObjEllipse
+	UpT = 0
+	Stc = pt0(0,35),sz(54,206),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[223,0,0]),0
+	Acc = Color2(RGB[255,255,255])
+	Bmp = ""
+ObjEnd
+ObjEnd
+ObjEnd
+ObjEnd
+LayerEnd
+End
