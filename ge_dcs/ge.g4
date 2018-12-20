@@ -3,7 +3,9 @@ grammar GE;
 // 语法
 file :  layer+ ;
 
-layer : layerdef objs layerend ;
+layer : layerdef objs layerend
+      | libdef objs libend
+      ;
 
 objs : obj* ;
 
@@ -22,6 +24,9 @@ expr :
 layerend : LAYEREND LINE ;
 layerdef : LAYERDEF LINE ;
 
+libend : LIBEND LINE ;
+libdef : LIBDEF LINE ;
+
 objend : OBJEND LINE ;
 objstart : OBJSTART LINE ;
 
@@ -29,6 +34,9 @@ objstart : OBJSTART LINE ;
 // 词法
 
 EQ : '=' ;
+
+LIBEND : 'LibEnd' ;
+LIBDEF : 'LibDef' ',' TEXT ;
 
 OBJGROUP : 'Obj'[gG][rR][oO][uU][pP] ;
 

@@ -5,7 +5,7 @@ in1:
 
 # view
 vi1:
-	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE file -gui ff.tree
+	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE file -gui f.tib
 
 
 in2:

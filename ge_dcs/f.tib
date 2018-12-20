@@ -1,0 +1,906 @@
+LibDef,电动挡板阀一
+Siz = 386,296
+IsDev = NO
+OPType = -1
+Confirm = No
+ObjGroup
+UpT = -100
+Stc = pt0(0,0),sz(386,296)
+Para = $00vc
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(362,284)
+ObjLine
+UpT = 0
+Stc = pt1(181,116),pt2(181,164),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjRectangle
+UpT = 0
+Stc = pt0(0,164),sz(362,120),Pen(0,10,RGB[128,128,128]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(132,195),sz(96,54),Pen(0,10,RGB[128,128,128]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(213,202),pt2(323,256),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(35,183),pt2(146,241),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(102,0),sz(157,114),Pen(0,10,RGB[128,128,128]),Brush(1,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(141,28),sz(73,54)
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(26,54)
+ObjLine
+UpT = 0
+Stc = pt1(0,0),pt2(0,54),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,0),pt2(26,36),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(35,0),sz(38,54)
+ObjLine
+UpT = 0
+Stc = pt1(38,0),pt2(38,54),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,36),pt2(38,0),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(362,284)
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[234,234,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc,$00vc
+Dyn = 0 fValue 0 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[0,213,69,255,255,255],1,Ax($00vc).bit17*(!(Ax($00vc).bit16))
+Dyn = 0 fValue 0 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[210,2,40,255,255,255],1,Ax($00vc).bit16*(!(Ax($00vc).bit17))
+Dyn = 1 bit7 0 Flash,1,0,$00vc
+Dyn = 1 bit15 0 Flash,1,0,$00vc
+Dyn = 0 fValue 0 Flash,0,0,Ax($00vc).bit16*(!(Ax($00vc).bit17))
+Dyn = 0 fValue 0 Flash,0,0,Ax($00vc).bit17*(!(Ax($00vc).bit16))
+Para = $00vc
+ObjLine
+UpT = 0
+Stc = pt1(181,116),pt2(181,164),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjRectangle
+UpT = 0
+Stc = pt0(0,164),sz(362,120),Pen(0,10,RGB[0,224,224]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(132,195),sz(96,54),Pen(0,10,RGB[0,224,224]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(213,202),pt2(323,256),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(35,183),pt2(146,241),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(102,0),sz(157,114),Pen(0,10,RGB[0,224,224]),Brush(1,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(141,28),sz(73,54)
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(26,54)
+ObjLine
+UpT = 0
+Stc = pt1(0,0),pt2(0,54),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,0),pt2(26,36),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(35,0),sz(38,54)
+ObjLine
+UpT = 0
+Stc = pt1(38,0),pt2(38,54),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,36),pt2(38,0),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(14,20),sz(372,276)
+Dyn = 1 bit18 0 Hide,1,$00vc
+Para = $00vc
+ObjEllipse
+UpT = 0
+Stc = pt0(0,0),sz(372,276),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[144,144,255]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(40,237),pt2(309,27),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (127,207),Line,(212,207),Line,(212,186),Line,(242,160),Line,(242,105),Line
+Pnt = (242,127),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(212,91),pt2(212,151),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(184,79),pt2(184,151),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(150,45),pt2(150,151),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(122,45),pt2(122,151),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(91,82),pt2(91,167),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (91,167),Line,(122,188),Line,(122,211),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (122,45),Line,(123,41),Line,(127,38),Line,(132,38),Line,(136,38),Line
+Pnt = (140,38),Line,(141,38),Line,(145,40),Line,(149,45),Line,(150,45),Line
+Pnt = (150,45),Line,(150,45),Line,(149,45),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (91,82),Line,(95,77),Line,(96,77),Line,(100,73),Line,(101,73),Line
+Pnt = (104,73),Line,(107,73),Line,(112,73),Line,(113,77),Line,(116,77),Line
+Pnt = (119,79),Line,(122,82),Line,(122,82),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(149,32),R(0,0),A(0,89),Pen(0,0,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,9,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (150,77),Line,(154,73),Line,(160,73),Line,(166,69),Line,(170,69),Line
+Pnt = (178,73),Line,(184,73),Line,(184,77),Line,(184,79),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (214,110),Line,(218,105),Line,(218,105),Line,(220,105),Line,(226,105),Line
+Pnt = (230,104),Line,(233,104),Line,(236,104),Line,(242,105),Line,(242,105),Line
+Pnt = (242,110),Line,(242,110),Line,(242,110),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (184,93),Line,(192,88),Line,(192,85),Line,(196,85),Line,(196,85),Line
+Pnt = (203,85),Line,(205,85),Line,(210,88),Line,(212,91),Line,(212,93),Line
+Pnt = (212,93),Line,(212,93),Line,(212,91),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjEnd
+LibEnd
+LibDef,膜式气动门一
+Siz = 380,347
+IsDev = NO
+OPType = -1
+Confirm = No
+ObjGroup
+UpT = -100
+Stc = pt0(0,0),sz(380,347)
+Para = $00vc
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(380,315)
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[96,96,96]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,154),(0,315),(380,154),(380,315)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(190,96),pt2(190,233),Pen(0,10,RGB[96,96,96])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(94,87),pt2(290,87),Pen(0,10,RGB[96,96,96])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(192,94),R(98,94),A(0,177),Pen(0,10,RGB[96,96,96],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(380,315)
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[234,234,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc,$00vc
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc,$00vc
+Dyn = 0 fValue 0 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[0,213,69,255,255,255],1,Ax($00vc).bit17*(!(Ax($00vc).bit16))
+Dyn = 0 fValue 0 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[210,2,40,255,255,255],1,Ax($00vc).bit16*(!(Ax($00vc).bit17))
+Dyn = 0 fValue 0 ColorDx,Brush,2,RGB[-1,-1,-1,255,255,255],0,RGB[0,213,69,255,255,255],1,Ax($00vc).bit17*(!(Ax($00vc).bit16))
+Dyn = 0 fValue 0 ColorDx,Brush,2,RGB[-1,-1,-1,255,255,255],0,RGB[210,2,40,255,255,255],1,Ax($00vc).bit16*(!(Ax($00vc).bit17))
+Dyn = 1 bit7 0 Flash,1,0,$00vc
+Dyn = 1 bit15 0 Flash,1,0,$00vc
+Dyn = 0 fValue 0 Flash,0,0,Ax($00vc).bit16*(!(Ax($00vc).bit17))
+Dyn = 0 fValue 0 Flash,0,0,Ax($00vc).bit17*(!(Ax($00vc).bit16))
+Para = $00vc
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[0,224,224]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,154),(0,315),(380,154),(380,315)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(190,96),pt2(190,233),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(94,87),pt2(290,87),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(192,94),R(98,94),A(0,177),Pen(0,10,RGB[0,224,224],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(3,14),sz(371,333)
+Dyn = 1 bit18 0 Hide,1,$00vc
+Para = $00vc
+ObjEllipse
+UpT = 0
+Stc = pt0(0,0),sz(371,333),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[144,144,255]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(33,289),pt2(310,23),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (122,251),Line,(208,251),Line,(208,225),Line,(244,192),Line,(244,122),Line
+Pnt = (244,150),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(208,102),pt2(208,180),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(178,89),pt2(178,180),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(147,47),pt2(147,180),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(117,47),pt2(117,180),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(85,97),pt2(85,197),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (85,197),Line,(117,225),Line,(117,256),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (117,47),Line,(117,39),Line,(122,38),Line,(127,38),Line,(131,38),Line
+Pnt = (136,38),Line,(136,38),Line,(141,39),Line,(147,47),Line,(147,47),Line
+Pnt = (147,47),Line,(147,47),Line,(147,47),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (85,97),Line,(89,85),Line,(89,84),Line,(94,80),Line,(94,80),Line
+Pnt = (98,80),Line,(102,80),Line,(108,80),Line,(108,84),Line,(113,85),Line
+Pnt = (115,89),Line,(117,97),Line,(117,97),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(147,29),R(0,0),A(0,89),Pen(0,0,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,9,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (147,85),Line,(150,80),Line,(154,80),Line,(161,76),Line,(166,76),Line
+Pnt = (176,80),Line,(178,80),Line,(178,85),Line,(178,89),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (210,131),Line,(217,122),Line,(217,122),Line,(217,122),Line,(224,122),Line
+Pnt = (228,122),Line,(235,122),Line,(235,122),Line,(244,122),Line,(244,122),Line
+Pnt = (244,131),Line,(244,131),Line,(244,131),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (178,106),Line,(191,101),Line,(191,97),Line,(196,97),Line,(196,97),Line
+Pnt = (201,97),Line,(201,97),Line,(207,101),Line,(208,102),Line,(208,106),Line
+Pnt = (208,106),Line,(208,106),Line,(208,102),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjEnd
+LibEnd
+LibDef,电磁截止阀1
+Siz = 378,297
+IsDev = NO
+OPType = -1
+Confirm = No
+ObjGroup
+UpT = -100
+Stc = pt0(0,0),sz(378,297)
+Para = $00vc\nABORIVC
+ObjGroup
+UpT = 0
+Stc = pt0(5,0),sz(370,265)
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[128,128,128]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,131),(0,265),(370,131),(370,265)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(185,129),pt2(185,193),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjRectangle
+UpT = 0
+Stc = pt0(115,7),sz(139,117),Pen(0,10,RGB[128,128,128]),Brush(1,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjText
+UpT = 0
+Str = "S"
+Fnt = -131,0,400,0,0,134,宋体
+Stc = pt0(140,0),sz(97,131),Pen(RGB[128,128,128]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(5,0),sz(370,265)
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[234,234,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc\nABORIVC,$00vc\nABORIVC
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc\nABORIVC,$00vc\nABORIVC
+Dyn = 1 bit7 0 Flash,1,0,$00vc\nABORIVC
+Dyn = 1 bit15 0 Flash,1,0,$00vc\nABORIVC
+Para = $00vc\nABORIVC
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[0,255,255]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,131),(0,265),(370,131),(370,265)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(185,129),pt2(185,193),Pen(0,10,RGB[0,255,255])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjRectangle
+UpT = 0
+Stc = pt0(115,7),sz(139,117),Pen(0,10,RGB[0,255,255]),Brush(1,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjText
+UpT = 0
+Str = "S"
+Fnt = -131,0,400,0,0,134,宋体
+Stc = pt0(140,0),sz(97,131),Pen(RGB[0,255,255]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(0,28),sz(378,269)
+Dyn = 1 bit18 0 Hide,1,$00vc\nABORIVC
+Para = $00vc\nABORIVC
+ObjEllipse
+UpT = 0
+Stc = pt0(0,0),sz(378,269),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[144,144,255]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(44,233),pt2(316,29),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (132,203),Line,(217,203),Line,(217,182),Line,(248,158),Line,(248,106),Line
+Pnt = (248,126),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(217,90),pt2(217,149),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(189,79),pt2(189,149),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(156,46),pt2(156,149),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(125,46),pt2(125,149),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(96,81),pt2(96,164),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (96,164),Line,(125,185),Line,(125,207),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (125,46),Line,(128,42),Line,(132,40),Line,(136,40),Line,(140,40),Line
+Pnt = (144,40),Line,(146,40),Line,(150,41),Line,(153,46),Line,(156,46),Line
+Pnt = (156,46),Line,(156,46),Line,(153,46),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (96,81),Line,(100,78),Line,(101,77),Line,(103,74),Line,(107,74),Line
+Pnt = (108,74),Line,(112,74),Line,(115,74),Line,(118,77),Line,(121,78),Line
+Pnt = (124,79),Line,(125,81),Line,(125,81),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(153,35),R(0,0),A(0,89),Pen(0,0,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,9,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (156,78),Line,(157,74),Line,(165,73),Line,(172,71),Line,(175,71),Line
+Pnt = (183,73),Line,(189,74),Line,(189,78),Line,(189,79),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (218,109),Line,(224,106),Line,(224,106),Line,(227,105),Line,(231,105),Line
+Pnt = (236,103),Line,(238,103),Line,(242,103),Line,(248,105),Line,(248,106),Line
+Pnt = (248,109),Line,(248,109),Line,(248,109),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (189,93),Line,(195,87),Line,(196,85),Line,(200,85),Line,(202,85),Line
+Pnt = (207,85),Line,(210,85),Line,(215,87),Line,(217,90),Line,(217,93),Line
+Pnt = (217,93),Line,(217,93),Line,(217,90),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjEnd
+LibEnd
+LibDef,电磁阀1
+Siz = 265,259
+IsDev = NO
+OPType = -1
+Confirm = No
+ObjGroup
+UpT = -100
+Stc = pt0(0,0),sz(265,259)
+Para = $00vc\nABZF1VC
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(251,229)
+ObjRectangle
+UpT = 0
+Stc = pt0(77,0),sz(96,109),Pen(0,10,RGB[128,128,128]),Brush(1,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(81,101),pt2(165,5),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[128,128,128]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,111),(0,229),(251,111),(251,229)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(125,110),pt2(125,166),Pen(0,10,RGB[128,128,128])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(251,229)
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[234,234,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc\nABZF1VC,$00vc\nABZF1VC
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,$00vc\nABZF1VC,$00vc\nABZF1VC
+Dyn = 1 bit7 0 Flash,1,0,$00vc\nABZF1VC
+Dyn = 1 bit15 0 Flash,1,0,$00vc\nABZF1VC
+Para = $00vc\nABZF1VC
+ObjRectangle
+UpT = 0
+Stc = pt0(77,0),sz(96,109),Pen(0,10,RGB[0,224,224]),Brush(1,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(81,101),pt2(165,5),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[0,224,224]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,111),(0,229),(251,111),(251,229)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(125,110),pt2(125,166),Pen(0,10,RGB[0,224,224])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(0,23),sz(265,236)
+Dyn = 1 bit18 0 Hide,1,$00vc\nABZF1VC
+Para = $00vc\nABZF1VC
+ObjEllipse
+UpT = 0
+Stc = pt0(0,0),sz(265,236),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[144,144,255]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(32,203),pt2(222,26),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (93,177),Line,(153,177),Line,(153,159),Line,(175,138),Line,(175,93),Line
+Pnt = (175,111),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(153,80),pt2(153,131),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(134,70),pt2(134,131),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(109,40),pt2(109,131),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(88,40),pt2(88,131),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(68,72),pt2(68,143),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (68,143),Line,(88,162),Line,(88,181),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (88,40),Line,(90,37),Line,(93,36),Line,(96,36),Line,(99,36),Line
+Pnt = (102,36),Line,(104,36),Line,(106,37),Line,(108,40),Line,(109,40),Line
+Pnt = (109,40),Line,(109,40),Line,(108,40),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (68,72),Line,(70,69),Line,(72,67),Line,(73,66),Line,(75,66),Line
+Pnt = (77,66),Line,(79,66),Line,(82,66),Line,(84,67),Line,(86,69),Line
+Pnt = (88,70),Line,(88,72),Line,(88,72),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(108,31),R(0,0),A(0,89),Pen(0,0,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,9,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (109,69),Line,(111,66),Line,(117,65),Line,(122,63),Line,(124,63),Line
+Pnt = (129,65),Line,(134,66),Line,(134,69),Line,(134,70),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (154,96),Line,(158,93),Line,(158,93),Line,(159,91),Line,(162,91),Line
+Pnt = (166,90),Line,(168,90),Line,(171,90),Line,(175,91),Line,(175,93),Line
+Pnt = (175,96),Line,(175,96),Line,(175,96),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,13,Pen(0,0,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (134,81),Line,(138,77),Line,(139,75),Line,(141,75),Line,(142,74),Line
+Pnt = (146,74),Line,(148,75),Line,(152,77),Line,(153,80),Line,(153,81),Line
+Pnt = (153,81),Line,(153,81),Line,(153,80),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjEnd
+LibEnd
+LibDef,手动阀2
+Siz = 132,295
+IsDev = NO
+OPType = -1
+Confirm = No
+ObjPolygon
+UpT = -100
+Stc = 5,Pen(0,20,RGB[192,192,192]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,295),(132,295),(5,0),(127,0),(0,295)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+LibEnd
+LibDef,电动调节阀一
+Siz = 318,347
+IsDev = NO
+OPType = -1
+Confirm = No
+ObjGroup
+UpT = -100
+Stc = pt0(0,0),sz(318,347)
+Para = $00FB
+Para = $01FAULT
+ObjLine
+UpT = 0
+Stc = pt1(160,135),pt2(160,214),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+Dyn = 1 fValue 0 ColorAx,Pen,4,RGB[0,213,69,-1,-1,-1],  0.00,RGB[0,213,69,-1,-1,-1],  5.00,RGB[210,210,0,-1,-1,-1], 95.00,RGB[210,2,40,-1,-1,-1],100.00,RGB[210,2,40,-1,-1,-1],$00FB
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[221,221,221,255,255,255],1,$01FAULT
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(73,0),sz(172,152),Pen(0,10,RGB[176,176,0]),Brush(0,RGB[0,0,128]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 fValue 0 ColorAx,Pen,4,RGB[0,213,69,-1,-1,-1],  0.00,RGB[0,213,69,-1,-1,-1],  5.00,RGB[210,210,0,-1,-1,-1], 95.00,RGB[210,2,40,-1,-1,-1],100.00,RGB[210,2,40,-1,-1,-1],$00FB
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[221,221,221,255,255,255],1,$01FAULT
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(116,35),sz(86,77)
+Dyn = 1 fValue 0 ColorAx,Pen,4,RGB[0,213,69,-1,-1,-1],  0.00,RGB[0,213,69,-1,-1,-1],  5.00,RGB[210,210,0,-1,-1,-1], 95.00,RGB[210,2,40,-1,-1,-1],100.00,RGB[210,2,40,-1,-1,-1],$00FB
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[221,221,221,255,255,255],1,$01FAULT
+Para = $00FB
+Para = $01FAULT
+ObjGroup
+UpT = 0
+Stc = pt0(0,0),sz(39,77)
+ObjLine
+UpT = 0
+Stc = pt1(0,0),pt2(0,77),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,0),pt2(39,55),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(43,0),sz(43,77)
+ObjLine
+UpT = 0
+Stc = pt1(43,0),pt2(43,77),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,55),pt2(43,0),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjEnd
+ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,10,RGB[176,176,0]),Brush(0,RGB[0,0,128]),NoClip
+Pnt = (0,347),(318,347),(318,214),(0,214)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 fValue 0 ColorAx,Pen,4,RGB[0,213,69,-1,-1,-1],  0.00,RGB[0,213,69,-1,-1,-1],  5.00,RGB[210,210,0,-1,-1,-1], 95.00,RGB[210,2,40,-1,-1,-1],100.00,RGB[210,2,40,-1,-1,-1],$00FB
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[221,221,221,255,255,255],1,$01FAULT
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,342),pt2(316,219),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+Dyn = 1 fValue 0 ColorAx,Pen,4,RGB[0,213,69,-1,-1,-1],  0.00,RGB[0,213,69,-1,-1,-1],  5.00,RGB[210,210,0,-1,-1,-1], 95.00,RGB[210,2,40,-1,-1,-1],100.00,RGB[210,2,40,-1,-1,-1],$00FB
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[221,221,221,255,255,255],1,$01FAULT
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(1,219),pt2(315,342),Pen(0,10,RGB[176,176,0])
+Acc = Arrow(0,200,0,200)
+Dyn = 1 fValue 0 ColorAx,Pen,4,RGB[0,213,69,-1,-1,-1],  0.00,RGB[0,213,69,-1,-1,-1],  5.00,RGB[210,210,0,-1,-1,-1], 95.00,RGB[210,2,40,-1,-1,-1],100.00,RGB[210,2,40,-1,-1,-1],$00FB
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[-1,-1,-1,255,255,255],0,RGB[221,221,221,255,255,255],1,$01FAULT
+ObjEnd
+ObjEnd
+LibEnd
