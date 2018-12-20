@@ -4,7 +4,7 @@ grammar GE;
 file :  layer+ ;
 
 layer : layerdef objs layerend
-      | libdef objs libend
+      | libdef libhead objs libend
       ;
 
 objs : obj* ;
@@ -15,6 +15,8 @@ obj :
     ;
 
 objgroup : OBJGROUP LINE ;
+
+libhead : (TEXT LINE)+ ;
 
 expr :
         obj                 # EObj
@@ -29,7 +31,6 @@ libdef : LIBDEF LINE ;
 
 objend : OBJEND LINE ;
 objstart : OBJSTART LINE ;
-
 
 // 词法
 
