@@ -1,45 +1,713 @@
-Layer def
+Layer Layer0
+ObjText
+UpT = 0
+Str = "A引风机润滑油泵"
+Fnt = -210,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(694,52),sz(1695,271),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "#1润滑油泵"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(378,853),sz(797,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "#2润滑油泵"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(1972,853),sz(797,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "#1控制油泵"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(371,1930),sz(797,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "#2控制油泵"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(1995,1930),sz(797,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机控制油泵"
+Fnt = -210,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(608,1090),sz(1695,271),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@A引风机,油站加热器,VCAIDOP5,68,VCAIDOP5,,,LSD68DO003,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Stc = pt0(1228,2188),sz(445,411),Poke,Up,2
+UP = 0,
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "油站加热器"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(1069,2678),sz(784,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机油站润滑油差压高"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(512,2902),sz(1754,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[192,192,192,-1,-1,-1],0,RGB[255,0,0,-1,-1,-1],1,D68DI041
+Dyn = 1 bValue 1 Flash,1,0,D68DI041
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机油站控制油差压高"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(512,3070),sz(1754,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[192,192,192,-1,-1,-1],0,RGB[255,0,0,-1,-1,-1],1,D68DI042
+Dyn = 1 bValue 1 Flash,1,0,D68DI042
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机油箱油位低"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(512,3239),sz(1754,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[192,192,192,-1,-1,-1],0,RGB[255,0,0,-1,-1,-1],1,D68DI061
+Dyn = 1 bValue 1 Flash,1,0,D68DI061
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机油箱油位低低"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(512,3407),sz(1754,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[192,192,192,-1,-1,-1],0,RGB[255,0,0,-1,-1,-1],1,D68DI062
+Dyn = 1 bValue 1 Flash,1,0,D68DI062
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机润滑油压力低"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(512,3576),sz(1754,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[192,192,192,-1,-1,-1],0,RGB[255,0,0,-1,-1,-1],1,D68DI058
+Dyn = 1 bValue 1 Flash,1,0,D68DI058
+ObjEnd
+ObjText
+UpT = 0
+Str = "A引风机控制油压力低"
+Fnt = -140,0,700,0,0,0,Microsoft Sans Serif
+Stc = pt0(512,3745),sz(1754,167),Pen(RGB[236,236,236]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Pen,2,RGB[192,192,192,-1,-1,-1],0,RGB[255,0,0,-1,-1,-1],1,6HND11CP2L
+Dyn = 1 bValue 1 Flash,1,0,6HND11CP2L
+ObjEnd
+ObjText
+UpT = 0
+Str = "TC13F020213"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(1131,519),sz(851,147),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,TC13F020213
+ObjEnd
+ObjText
+UpT = 0
+Str = "D62AI025"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(1230,1659),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,D62AI025
+ObjEnd
+ObjText
+UpT = 0
+Str = "TC13F020214"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(1853,2311),sz(829,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,TC13F020214
+ObjEnd
+ObjText
+UpT = 0
+Str = "油温联锁"
+Fnt = -140,0,700,0,0,0,宋体
+Stc = pt0(410,2177),sz(633,136),Pen(RGB[236,236,236]),Brush(1,RGB[0,128,128]),0,0
+AutoWrap = 0
+Translate = 0
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = DPU 68 D/MA 68DPUDM119 Pulse
+Stc = pt0(479,2387),sz(465,209),Button,Down,0
+Fnt = -160,0,400,0,0,0,宋体
+But = "投入",COLOR(RGB[0,0,0]),BKCOLOR(RGB[192,192,192]),TEXTCOLOR(RGB[0,0,0])
+Acc = Brush(0,RGB[255,255,255])
+Bmp = ""
+DOWN =
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Brush,2,RGB[192,192,192,255,255,255],0,RGB[255,0,0,255,255,255],1,68DPUDM119
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = DPU 68 D/MA 68DPUDM120 Pulse
+Stc = pt0(479,2630),sz(465,209),Button,Down,0
+Fnt = -160,0,400,0,0,0,宋体
+But = "解除",COLOR(RGB[0,0,0]),BKCOLOR(RGB[192,192,192]),TEXTCOLOR(RGB[0,0,0])
+Acc = Brush(0,RGB[255,255,255])
+Bmp = ""
+DOWN =
+Translate = 0
+Dyn = 1 bValue 1 ColorDx,Brush,2,RGB[0,255,0,255,255,255],0,RGB[192,192,192,255,255,255],1,68DPUDM120
+ObjEnd
+ObjText
+UpT = 0
+Str = "D08AI012"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(-89,539),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,D08AI012
+ObjEnd
+ObjText
+UpT = 0
+Str = "D08AI150"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(-83,1651),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,D08AI150
+ObjEnd
+ObjText
+UpT = 0
+Str = "D08AI153"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(2364,1658),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,D08AI153
+ObjEnd
+ObjText
+UpT = 0
+Str = "D08AI014"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(2357,531),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,D08AI014
+ObjEnd
+ObjText
+UpT = 0
+Str = "D08AI154"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(1851,2508),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,1,1,D08AI154
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@A引风机,A润滑油泵,VCAIDOP1,68,VCAIDOP1,,,LSD68DO003,,,,,,,,,,,,,,,,,,,,,,,A引风机A润滑油泵备用启动条件,D68DI058,68DPUDM044,,,,,,,,,,,,,,,,,,,
+Stc = pt0(545,395),sz(409,398),Poke,Up,2
+UP = 0,
+Translate = 0
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@A引风机,B润滑油泵,VCAIDOP2,68,VCAIDOP2,,,LSD68DO003,,,,,,,,,,,,,,,,,,,,,,,A引风机B润滑油泵备用启动条件,D68DI058,68DPUDM043,,,,,,,,,,,,,,,,,,,
+Stc = pt0(2001,448),sz(399,376),Poke,Up,2
+UP = 0,
+Translate = 0
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@A引风机,A液压油泵,VCAIDOP3,68,VCAIDOP3,,,LSD68DO003,,,,,,,,,,,,,,,,,,,,,,,A引风机A液压油泵备用启动条件,6HND11CP2L,68DPUDM114,,,,,,,,,,,,,,,,,,,
+Stc = pt0(483,1487),sz(409,398),Poke,Up,2
+UP = 0,
+Translate = 0
+ObjEnd
+ObjPoke
+UpT = 0
+Cmd = MMI PopUpFigure 手操组\DM1-1.tig 0 0 0 0 1 0 @@A引风机,B液压油泵,VCAIDOP4,68,VCAIDOP4,,,LSD68DO003,,,,,,,,,,,,,,,,,,,,,,,A引风机B液压油泵备用启动条件,D68DI058,68DPUDM113,,,,,,,,,,,,,,,,,,,
+Stc = pt0(1993,1531),sz(399,376),Poke,Up,2
+UP = 0,
+Translate = 0
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(551,417),sz(392,372),Pen(0,20,RGB[0,255,255]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[255,255,0,255,255,255],0,RGB[0,255,0,255,255,255],1,RGB[255,0,0,255,255,255],2,RGB[255,255,255,255,255,255],3,bit12,0,VCAIDOP1,VCAIDOP1
+ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 7,Pen(0,0,RGB[0,0,255]),Brush(0,RGB[255,255,0]),NoClip
+Pnt = (764,742),(734,742),(734,661),(690,661),(750,465)
+Pnt = (810,661),(764,661)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP1,VCAIDOP1
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP1,VCAIDOP1
+ObjEnd
 ObjGroup
-	UpT = 0
-	Stc = pt0(12145,5391),sz(430,1464)
-ObjRectangle
-	UpT = 0
-	Stc = pt0(0,0),sz(430,1464),Pen(0,20,RGB[255,0,255]),Brush(0,RGB[0,0,255]),0
-	Acc = Color2(RGB[255,255,255])
-	Bmp = ""
+UpT = 0
+Stc = pt0(572,441),sz(333,315)
+Dyn = 1 bit22 0 Hide,1,VCAIDOP1
+Para = $00vc\nVCAIDOP1
+ObjEllipse
+UpT = 0
+Stc = pt0(0,0),sz(333,315),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[192,192,192]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(48,267),pt2(283,42),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
 ObjEnd
 ObjGroup
-	UpT = 0
-	Stc = pt0(20,82),sz(389,1275)
+UpT = 0
+Stc = pt0(50,18),sz(220,264)
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (48,258),Line,(175,258),Line,(175,226),Line,(220,190),Line,(220,92),Line
+Pnt = (220,137),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(175,76),pt2(175,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(136,66),pt2(136,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(84,11),pt2(84,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(40,11),pt2(40,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,68),pt2(0,196),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(195,92),R(15,5),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(153,78),R(15,5),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(110,61),R(15,5),A(0,161),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(15,75),R(15,5),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(62,11),R(15,11),A(0,179),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (0,194),Line,(40,234),Line,(40,264),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
+ObjEnd
+ObjEllipse
+UpT = 0
+Stc = pt0(2020,444),sz(391,372),Pen(0,20,RGB[0,255,255]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[255,255,0,255,255,255],0,RGB[0,255,0,255,255,255],1,RGB[255,0,0,255,255,255],2,RGB[255,255,255,255,255,255],3,bit12,0,VCAIDOP2,VCAIDOP2
+ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 7,Pen(0,0,RGB[0,0,255]),Brush(0,RGB[255,255,0]),NoClip
+Pnt = (2233,769),(2203,769),(2203,688),(2159,688),(2218,492)
+Pnt = (2278,688),(2233,688)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP2,VCAIDOP2
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP2,VCAIDOP2
+ObjEnd
 ObjGroup
-	UpT = 0
-	Stc = pt0(322,1025),sz(67,245)
+UpT = 0
+Stc = pt0(2071,500),sz(281,287)
+Dyn = 1 bit22 0 Hide,1,VCAIDOP2
+Para = $00vc\nVCAIDOP2
 ObjEllipse
-	UpT = 0
-	Stc = pt0(0,10),sz(61,231),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[128,0,0]),0
-	Acc = Color2(RGB[255,255,255])
-	Bmp = ""
+UpT = 0
+Stc = pt0(0,0),sz(281,287),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[192,192,192]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(41,243),pt2(239,39),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(42,17),sz(188,242)
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (41,235),Line,(148,235),Line,(148,205),Line,(187,173),Line,(187,84),Line
+Pnt = (187,125),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(148,70),pt2(148,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(115,61),pt2(115,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(71,11),pt2(71,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(34,11),pt2(34,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,63),pt2(0,179),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(165,84),R(13,6),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(129,71),R(13,6),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(93,56),R(13,6),A(0,161),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(13,69),R(13,6),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(53,11),R(13,11),A(0,179),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (0,177),Line,(34,213),Line,(34,240),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
 ObjEnd
 ObjEllipse
-	UpT = 0
-	Stc = pt0(0,19),sz(58,222),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[159,0,0]),0
-	Acc = Color2(RGB[255,255,255])
-	Bmp = ""
+UpT = 0
+Stc = pt0(2016,1529),sz(391,372),Pen(0,20,RGB[0,255,255]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[255,255,0,255,255,255],0,RGB[0,255,0,255,255,255],1,RGB[255,0,0,255,255,255],2,RGB[255,255,255,255,255,255],3,bit12,0,VCAIDOP4,VCAIDOP4
+ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 7,Pen(0,0,RGB[0,0,255]),Brush(0,RGB[255,255,0]),NoClip
+Pnt = (2229,1854),(2199,1854),(2199,1773),(2155,1773),(2214,1577)
+Pnt = (2274,1773),(2229,1773)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP4,VCAIDOP4
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP4,VCAIDOP4
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(2075,1571),sz(281,287)
+Dyn = 1 bit22 0 Hide,1,VCAIDOP4
+Para = $00vc\nVCAIDOP4
+ObjEllipse
+UpT = 0
+Stc = pt0(0,0),sz(281,287),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[192,192,192]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(41,243),pt2(239,39),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(42,17),sz(188,242)
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (41,235),Line,(148,235),Line,(148,205),Line,(187,173),Line,(187,84),Line
+Pnt = (187,125),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(148,70),pt2(148,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(115,61),pt2(115,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(71,11),pt2(71,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(34,11),pt2(34,157),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,63),pt2(0,179),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(165,84),R(13,6),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(129,71),R(13,6),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(93,56),R(13,6),A(0,161),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(13,69),R(13,6),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(53,11),R(13,11),A(0,179),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (0,177),Line,(34,213),Line,(34,240),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjEnd
 ObjEnd
 ObjEllipse
-	UpT = 0
-	Stc = pt0(0,30),sz(57,211),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[191,0,0]),0
-	Acc = Color2(RGB[255,255,255])
-	Bmp = ""
+UpT = 0
+Stc = pt0(494,1514),sz(392,372),Pen(0,20,RGB[0,255,255]),Brush(0,RGB[0,0,96]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[255,255,0,255,255,255],0,RGB[0,255,0,255,255,255],1,RGB[255,0,0,255,255,255],2,RGB[255,255,255,255,255,255],3,bit12,0,VCAIDOP3,VCAIDOP3
 ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 7,Pen(0,0,RGB[0,0,255]),Brush(0,RGB[255,255,0]),NoClip
+Pnt = (707,1839),(677,1839),(677,1758),(633,1758),(693,1562)
+Pnt = (753,1758),(707,1758)
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP3,VCAIDOP3
+Dyn = 1 bit11 0 ColorDx2,Pen,4,RGB[210,210,0,255,255,255],0,RGB[0,213,69,255,255,255],1,RGB[210,2,40,255,255,255],2,RGB[221,221,221,255,255,255],3,bit12,0,VCAIDOP3,VCAIDOP3
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(534,1537),sz(333,315)
+Dyn = 1 bit22 0 Hide,1,VCAIDOP3
+Para = $00vc\nVCAIDOP3
 ObjEllipse
-	UpT = 0
-	Stc = pt0(0,35),sz(54,206),Pen(0,0,RGB[255,0,255]),Brush(0,RGB[223,0,0]),0
-	Acc = Color2(RGB[255,255,255])
-	Bmp = ""
+UpT = 0
+Stc = pt0(0,0),sz(333,315),Pen(0,20,RGB[255,0,0]),Brush(1,RGB[192,192,192]),0
+Acc = Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(48,267),pt2(283,42),Pen(0,20,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjGroup
+UpT = 0
+Stc = pt0(50,18),sz(220,264)
+ObjPath
+UpT = 0
+Stc = Open,NoClip,6,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (48,258),Line,(175,258),Line,(175,226),Line,(220,190),Line,(220,92),Line
+Pnt = (220,137),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(175,76),pt2(175,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(136,66),pt2(136,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(84,11),pt2(84,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(40,11),pt2(40,172),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjLine
+UpT = 0
+Stc = pt1(0,68),pt2(0,196),Pen(0,10,RGB[255,0,0])
+Acc = Arrow(0,200,0,200)
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(195,92),R(15,5),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(153,78),R(15,5),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(110,61),R(15,5),A(0,161),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(15,75),R(15,5),A(0,184),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjArc
+UpT = 0
+Stc = Pt0(62,11),R(15,11),A(0,179),Pen(0,10,RGB[255,0,0],0,0),
+Acc = Brush(0, RGB[192,192,192]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,3,Pen(0,10,RGB[255,0,0]),Brush(0,RGB[128,128,128])
+Pnt = (0,194),Line,(40,234),Line,(40,264),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
 ObjEnd
 ObjEnd
 ObjEnd
+ObjPolygon
+UpT = 0
+Stc = 4,Pen(0,20,RGB[0,0,64]),Brush(9,RGB[0,195,0]),NoClip
+Pnt = (1446,2185),(1663,2399),(1447,2614),(1230,2398)
+Acc = Color2(RGB[128,255,128])
+Bmp = ""
+Dyn = 1 bit11 0 ColorDx2,Brush,4,RGB[128,128,128,192,192,192],0,RGB[0,195,0,128,255,128],1,RGB[255,0,0,255,128,128],2,RGB[-1,-1,-1,-1,-1,-1],3,bit12,0,VCAIDOP5,VCAIDOP5
+ObjEnd
+ObjPath
+UpT = 0
+Stc = Open,NoClip,5,Pen(0,20,RGB[0,0,64]),Brush(0,RGB[128,128,128])
+Pnt = (1331,2320),Line,(1370,2511),Line,(1449,2257),Line,(1525,2511),Line,(1566,2320),Line
+Acc = Arrow(0,200,0,200),Brush(0, RGB[128,128,128]),Color2(RGB[255,255,255])
+Bmp = ""
+ObjEnd
+ObjText
+UpT = 0
+Str = "D62AI096"
+Fnt = -140,0,400,0,0,134,宋体
+Stc = pt0(1174,698),sz(688,153),Pen(RGB[255,255,0]),Brush(1,RGB[192,192,192]),0,0
+AutoWrap = 0
+Translate = 0
+Dyn = 1 fValue 0 ValueAi,6,2,1,D62AI096
 ObjEnd
 LayerEnd
-End

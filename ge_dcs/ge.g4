@@ -38,11 +38,14 @@ LAYERDEF : 'Layer' WS+ ID ;
 OBJEND : 'ObjEnd' ;
 OBJSTART : 'Obj' ID  ;
 
+INT: [0-9]+ ;
 
-ID : [a-zA-Z]+ ;
+LETTER : [a-zA-Z] ;
 
-LINE : '\r'? '\n' ;
+ID : LETTER(LETTER|INT)* ;
 
-WS : ('\t' | ' ')+ -> skip ;
+LINE : '\r' '\n' | '\n' ;
+
+WS : ('\t' | ' ')+ ;
 
 TEXT : (~[\r\n]+?)+ ;
