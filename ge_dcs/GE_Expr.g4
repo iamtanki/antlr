@@ -37,13 +37,13 @@ RGB : [rR][gG][bB] ;
 EXID :
        [pP][eE][nN]                                // # Pen
      | [uU][pP]                                    // # Up
-     | [pP][tT]INT                                 // # Pt
+     | [pP][tT]INT?                                 // # Pt
      | [pP][oO][kK][eE]                            // # Poke
      | [bB][uU][tT][tT][oO][nN]                    // # Btn
      | [bB][kK][cC][oO][lL][oO][rR]                // # BkColor
      | [tT][eE][xX][tT][cC][oO][lL][oO][rR]        // # TxtColor
-     | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT     // # FillColor
-     | [cC][oO][lL][oO][rR]INT                     // # Color
+     | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT?     // # FillColor
+     | [cC][oO][lL][oO][rR]INT?                     // # Color
      | [aA][rR][rR][oO][wW]                        // # Arrow
      | [sS][zZ]                                    // # Sz
      | [rR][mM]                                    // # Rm
@@ -56,6 +56,7 @@ EXID :
 ID :
      [uU][pP][tT]
    | [uU][pP]
+   | [dD][oO][wW][nN]
    | [fF][iI][lL][lL][bB][mM][pP]
    | [bB][mM][pP]
    | [bB][uU][tT]
