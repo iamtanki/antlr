@@ -50,6 +50,7 @@ EXID :
      | [bB][rR][uU][sS][hH]                        // # Brush
      | [tT][oO][pP]                                // # Top
      | [bB][aA][sS][eE]                            // # Base
+     | [rR][aA][dD][iI][uU][sS]                    // # Radius
      ;
 
 
