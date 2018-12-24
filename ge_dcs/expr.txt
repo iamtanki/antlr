@@ -1,7 +1,0 @@
-Stc = 3,Pen(0,0,RGB[160,0,0]),Brush(0,RGB[160,0,0]),NoClip
-Pnt = (0,98),(273,48),(0,0)
-Acc = Color2(RGB[255,255,255])
-Bmp = ""
-UpT = 0
-Stc = Open,NoClip,3,Pen(0,0,RGB[160,0,0]),Brush(0,RGB[128,128,128])
-Pnt = (0,48),Line,(135,48),Line,(135,48),Line

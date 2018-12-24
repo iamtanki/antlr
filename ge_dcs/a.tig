@@ -1,8 +1,0 @@
-Layer def
-ObjLine
-	UpT = 0
-	Stc = pt1(12285,2428),pt2(12286,5402),Pen(0,50,RGB[255,0,0])
-	Acc = Arrow(0,200,0,200)
-ObjEnd
-LayerEnd
-End
