@@ -14,7 +14,7 @@ in2:
 
 # view
 vi2:
-	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE_Expr prog -gui  Ftest.tree
+	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig GE_Expr prog -gui  F.tree
 
 
 
