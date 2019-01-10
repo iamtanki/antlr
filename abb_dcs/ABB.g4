@@ -3,11 +3,11 @@ grammar ABB ;
 // 语法
 fgr : obj+ ;
 
-obj : objname objcontent ;
+obj : objname objbody ;
 
 objname : LB (exprlist)* RB ;
 
-objcontent : LCB (sentence)* RCB  ;
+objbody : LCB sentence*? RCB  ;
 
 id :
      ID
@@ -15,13 +15,19 @@ id :
    | STRING
    ;
 
-sentence : CC SEMI ;
+sentence :
+           (text SEMI)
+         ;
 
 exprlist : id (',' id)* ;
+
+text : (~(SEMI))+ ;
 
 // 词法
 
 STRING :  '"' .*? '"' ;
+
+
 
 LB : '[' ;
 RB : ']' ;
@@ -40,9 +46,8 @@ fragment EXP : [eE] [+-]? INT ;
 
 INT: [0-9]+ ;
 
+LINE : [\r\n]+ -> skip ;
 
-WS : [ \t] -> skip;
-
-LINE : ('\r' '\n' | '\n') -> skip ;
+WS : [ \t]+ -> skip ;
 
 CC : (.)+? ;
