@@ -5,21 +5,29 @@ fgr : obj+ ;
 
 obj : objname objbody ;
 
-objname : LB (exprlist)* RB ;
+objname : LB (arglist)* RB ;
 
 objbody : LCB sentence*? RCB  ;
 
-id :
-     ID
-   | NUMBER
-   | STRING
-   ;
-
 sentence :
-           (text SEMI)
+           objcall SEMI
+         | text SEMI
          ;
 
-exprlist : id (',' id)* ;
+arglist : id (',' id)* ;
+
+objcall :
+           id (arglist)*
+         | arglist*
+         ;
+
+id :
+      OBJID             # Obj_id
+   |  CALLID            # Call_id
+   |  ID                # Other_id
+   |  NUMBER            # Num_id
+   |  STRING            # Str_id
+   ;
 
 text : (~(SEMI))+ ;
 
@@ -27,7 +35,18 @@ text : (~(SEMI))+ ;
 
 STRING :  '"' .*? '"' ;
 
+LINE : [\r\n]+ -> skip ;
 
+WS : [ \t] -> skip ;
+
+OBJID :
+       'AML' | 'DMF' | 'FGR' |'TXL' | 'TCN' |'PIL' | 'MSL' | 'LIN' | 'REC'
+      ;
+
+CALLID :
+        'EDV' | 'MFV' | 'ODB' | 'OBJS'  | 'ATT' | 'COL' | 'COO'  | 'FIL'
+      | 'SIZ' | 'SIF' | 'OBJ' | 'TIM'
+      ;
 
 LB : '[' ;
 RB : ']' ;
@@ -46,8 +65,5 @@ fragment EXP : [eE] [+-]? INT ;
 
 INT: [0-9]+ ;
 
-LINE : [\r\n]+ -> skip ;
-
-WS : [ \t]+ -> skip ;
 
 CC : (.)+? ;
