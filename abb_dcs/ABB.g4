@@ -10,15 +10,15 @@ objname : LB (arglist)* RB ;
 objbody : LCB sentence*? RCB  ;
 
 sentence :
-           objcall SEMI
-         | text SEMI
+           objcall SEMI         # Objcall_sent
+         | text SEMI            # Text_sent
          ;
 
 arglist : id (',' id)* ;
 
 objcall :
-           id (arglist)*
-         | arglist*
+           id (arglist)*        # Objcall_sent_id
+         | arglist*             # Objcall_sent_args
          ;
 
 id :
