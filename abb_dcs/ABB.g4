@@ -40,12 +40,28 @@ LINE : [\r\n]+ -> skip ;
 WS : [ \t] -> skip ;
 
 OBJID :
-       'AML' | 'DMF' | 'FGR' |'TXL' | 'TCN' |'PIL' | 'MSL' | 'LIN' | 'REC'
+        'AML'
+      | 'DMF'
+      | 'ELP'
+      | 'FGR'
+      | 'TXL' | 'TCN' | 'TXT'
+      | 'LIN'
+      | 'MSL'
+      | 'PIL' | 'PLN' | 'PLG'
+      | 'REC'
       ;
 
 CALLID :
-        'EDV' | 'MFV' | 'ODB' | 'OBJS'  | 'ATT' | 'COL' | 'COO'  | 'FIL'
-      | 'SIZ' | 'SIF' | 'OBJ' | 'TIM'
+         'ATT' | 'ATR' | 'ANG'
+       | 'COL' | 'COO'
+       | 'DIR'
+       | 'EDV'
+       | 'FIL' | 'FIX'
+       | 'MFV'
+       | 'NCO'
+       | 'ODB' | 'OBJS' | 'OBJ'
+       | 'SIZ' | 'SIF'
+       | 'TIM' | 'TXI'
       ;
 
 LB : '[' ;
