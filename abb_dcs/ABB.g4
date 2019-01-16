@@ -41,12 +41,13 @@ WS : [ \t] -> skip ;
 
 OBJID :
         'AML'
+      | 'BUT'
       | 'DMF'
       | 'ELP'
       | 'FGR'
       | 'TXL' | 'TCN' | 'TXT'
       | 'LIN'
-      | 'MSL'
+      | 'MSL' | 'MOB'
       | 'PIL' | 'PLN' | 'PLG'
       | 'REC'
       ;
@@ -57,11 +58,12 @@ CALLID :
        | 'DIR'
        | 'EDV'
        | 'FIL' | 'FIX'
-       | 'MFV'
-       | 'NCO'
+       | 'MFV' | 'MAKRO'
+       | 'NCO' | 'NPA'
        | 'ODB' | 'OBJS' | 'OBJ'
-       | 'SIZ' | 'SIF'
-       | 'TIM' | 'TXI'
+       | 'POS'
+       | 'SIZ' | 'SIF' | 'SY'INT
+       | 'TIM' | 'TXI' | 'TI'INT
       ;
 
 LB : '[' ;
