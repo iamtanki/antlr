@@ -27,12 +27,14 @@ id :
       OBJID             # Obj_id
    |  CALLID            # Call_id
    |  STRING            # Str_id
-   |  ID                # Other_id
+   |  ID                # Pi_id
    |  NUMBER            # Num_id
-
+   |  otherId           # Other_id
    ;
 
+otherId :  ~(QUOT|COMMA|SEMI|LB|RB|LCB|RCB|STRING) ;
 text : (~(SEMI)+) ;
+
 
 // 词法
 
@@ -63,7 +65,7 @@ CALLID :
        | 'COL' | 'COO' | 'CO'INT
        | 'DIR'
        | 'EDV'
-       | 'FIL' | 'FIX'
+       | 'FIL' | 'FIX' | 'FMN'
        | 'MFV' | 'MAKRO'
        | 'NCO' | 'NPA'
        | 'OBJS' | 'OBJ'
@@ -80,8 +82,10 @@ RCB : '}' ;
 LP : '(' ;
 RP : ')' ;
 SEMI : ';' ;
+QUOT : '"' ;
+COMMA: ',' ;
 
-LETTER : [a-zA-Z_#@] ;
+LETTER : [a-zA-Z_#@%] ;
 
 ID : (LETTER|INT)+ ;
 
@@ -89,6 +93,5 @@ NUMBER : [+-]? INT '.' INT EXP? | [+-]? INT EXP? ;
 fragment EXP : [eE] [+-]? INT ;
 
 INT: [0-9]+ ;
-
 
 CC : (.)+? ;
