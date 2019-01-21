@@ -6,13 +6,20 @@ prog : statements ;
 statements : (statement SEMI)+ ;
 
 statement :
-            ifStat LP condition COMMA statement COMMA statement  RP
-          | value
+            ifStat LP condition COMMA statement COMMA statement  RP   # IfStatement
+          | value                                                     # Value_stat
           ;
 
-ifStat : PREADD | POSTADD | REPLACE ;
+ifStat :
+         PREADD         # PreAdd
+       | POSTADD        # PostAdd
+       | REPLACE        # Replace
+       | IF             # If
+       ;
 
-condition : (PRE|POST|INFIX) EQ value ;
+condition :
+            (PRE|POST|INFIX) EQ value       # Cond
+          ;
 
 value :
          STRING
@@ -28,7 +35,7 @@ other : ~(STAR|STRING|LCB|RCB|COMMA|SEMI|LB|RB|QUOT|EQ) ;
 
 STRING : '"' .*? '"' ;
 
-
+IF : 'if' ;
 PREADD : 'preadd' ;
 POSTADD : 'postadd' ;
 REPLACE : 'replace' ;
