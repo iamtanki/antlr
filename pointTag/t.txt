@@ -1,0 +1,13 @@
+preadd(
+    pre  = "134","test",
+    replace ( infix = "334" ,  "333" ,"333"  )
+);
+
+postadd(
+    pre  = "134","test",
+    replace ( infix = "334" ,  "333" ,"333"  )
+);
+
+
+preadd(pre=333,"test",replace(infix="334","333","334"));
+preadd(pre="4455","test",replace(infix=(cedian_dde#224),"333","ddd"));
