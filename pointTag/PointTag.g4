@@ -18,7 +18,7 @@ ifStat :
        ;
 
 condition :
-            (PRE|POST|INFIX) EQ value       # Cond
+            op=(PRE|POST|INFIX) EQ value       # Cond
           ;
 
 value :
