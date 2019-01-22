@@ -1,21 +1,17 @@
 grammar PointTag ;
 
 // 语法
-prog : statements ;
+prog : statement+ ;
 
-statements : (statement SEMI)+ ;
+statement : expr SEMI ;
 
-statement :
-            ifStat LP condition COMMA statement COMMA statement  RP   # IfStatement
-          | value                                                     # Value_stat
+expr :
+            IF LP condition COMMA expr COMMA expr  RP          # Expr_If
+          | PREADD LP condition COMMA expr COMMA expr  RP      # Expr_PreAdd
+          | POSTADD LP condition COMMA expr COMMA expr  RP     # Expr_PostAdd
+          | REPLACE LP condition COMMA expr COMMA expr  RP     # Expr_Replace
+          | value                                              # Expr_Value
           ;
-
-ifStat :
-         PREADD         # PreAdd
-       | POSTADD        # PostAdd
-       | REPLACE        # Replace
-       | IF             # If
-       ;
 
 condition :
             op=(PRE|POST|INFIX) EQ value       # Cond
