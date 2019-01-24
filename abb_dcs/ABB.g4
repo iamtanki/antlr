@@ -23,16 +23,18 @@ objcall :
          | arglist*             # Objcall_sent_args
          ;
 
-id :
-      OBJID             # Obj_id
-   |  CALLID            # Call_id
-   |  STRING            # Str_id
-   |  ID                # Pi_id
-   |  NUMBER            # Num_id
-   |  otherId           # Other_id
-   ;
+id :  ~(COMMA|SEMI|LB|RB|LCB|RCB|QUOTE) ;
 
-otherId :  ~(QUOT|COMMA|SEMI|LB|RB|LCB|RCB|STRING) ;
+
+//      OBJID             # Obj_id
+//   |  CALLID            # Call_id
+//   |  STRING            # Str_id
+//   |  ID                # Pi_id
+//   |  NUMBER            # Num_id
+  // |  otherId           # Other_id
+   //;
+
+//otherId :  ~(QUOT|COMMA|SEMI|LB|RB|LCB|RCB|STRING) ;
 text : (~(SEMI)+) ;
 
 
@@ -61,15 +63,16 @@ OBJID :
       ;
 
 CALLID :
-         'ATT' | 'ATR' | 'ANG'
+         'ATT' | 'ATR' | 'ANG' | 'AK'INT
        | 'COL' | 'COO' | 'CO'INT
-       | 'DIR'
+       | 'DIR' | 'DCO'
        | 'EDV'
        | 'FIL' | 'FIX' | 'FMN'
        | 'MFV' | 'MAKRO'
        | 'NCO' | 'NPA'
        | 'OBJS' | 'OBJ'
        | 'POS'
+       | 'IMG'
        | 'SIZ' | 'SIF' | 'SY'INT
        | 'TIM' | 'TXI' | 'TI'INT
        | 'VAR' | 'VAL' | 'VPR' | 'VAO' | 'VE'INT
@@ -84,6 +87,7 @@ RP : ')' ;
 SEMI : ';' ;
 QUOT : '"' ;
 COMMA: ',' ;
+QUOTE : '`' ;
 
 LETTER : [a-zA-Z_#@%] ;
 
