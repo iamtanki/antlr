@@ -5,10 +5,10 @@ in:
 
 # view
 vi:
-	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig ABB fgr  -gui t.txt
+	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig ABB prog  -gui t.txt
 
 vi2:
-	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig ABB fgr  -gui b.txt
+	java -Dfile.encoding=UTF-8 org.antlr.v4.gui.TestRig ABB prog  -gui b.txt
 
 
 # Clean up

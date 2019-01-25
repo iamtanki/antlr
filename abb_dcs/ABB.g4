@@ -1,6 +1,18 @@
 grammar ABB ;
 
 // 语法
+
+prog : section+ ;
+
+section :
+           macros      # MacroSec
+        |  fgr         # fgrSec
+        ;
+
+macros : macro+ ;
+
+macro : MACROHEAD text SEMI obj+ MACROEND ;
+
 fgr : obj+ ;
 
 obj : objname objbody ;
@@ -45,6 +57,10 @@ STRING : '"' .*? '"' ;
 LINE : [\r\n]+ -> skip ;
 
 WS : [ \t] -> skip ;
+
+
+MACROHEAD : 'MAKRO:HEADER:' ;
+MACROEND : 'MAKRO:ENDER'  ;
 
 OBJID :
         'AML' | 'AA'
