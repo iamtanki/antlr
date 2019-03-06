@@ -4,13 +4,18 @@ grammar Transform;
 transform : ( WS* sentence WS* )+ ;
 
 sentence :
-            TRANSLATE LP valueList  RP
-         |  ROTATE  LP valueList  RP
-         |  MATRIX LP valueList  RP
-         |  SKEWX  LP valueList  RP
-         |  SKEWY  LP valueList  RP
-         |  SCALE  LP valueList  RP
-         ;
+           funcname  LP valueList  RP
+           ;
+
+funcname :
+            TRANSLATE
+          | ROTATE
+          | MATRIX
+          | SKEWX
+          | SKEWY
+          | SKEW
+          | SCALE
+          ;
 
 value :
         NUMBER
