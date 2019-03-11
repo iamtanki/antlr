@@ -43,6 +43,8 @@ EXID :
      | [bB][kK][cC][oO][lL][oO][rR]                // # BkColor
      | [tT][eE][xX][tT][cC][oO][lL][oO][rR]        // # TxtColor
      | [fF][iI][lL][lL][cC][oO][lL][oO][rR]INT?     // # FillColor
+     | [fF][rR][aA][mM][eE][lL][tT]                 // # FrameLT
+     | [fF][rR][aA][mM][eE][rR][bB]                 // # FrameRB
      | [cC][oO][lL][oO][rR]INT?                     // # Color
      | [aA][rR][rR][oO][wW]                        // # Arrow
      | [sS][zZ]                                    // # Sz
