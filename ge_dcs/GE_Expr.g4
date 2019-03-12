@@ -76,6 +76,7 @@ ID :
    | [aA][uU][tT][oO][wW][rR][aA][pP]
    | [tT][rR][aA][nN][sS][lL][aA][tT][eE]
    | [sS][tT][rR]
+   | [gG][pP]
    ;
 
 NUMBER : [+-]? INT '.' INT EXP? | [+-]? INT EXP? ;
