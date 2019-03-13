@@ -11,7 +11,7 @@ objs : obj* ;
 
 obj :
       objgroup expr* objend     # OGroup
-    | objstart expr*  objend    # ObjOther
+    | objstart expr*  (objend | objend objend)    # ObjOther
     ;
 
 objgroup : OBJGROUP LINE ;
@@ -31,6 +31,7 @@ libdef : LIBDEF LINE ;
 
 objend : OBJEND LINE ;
 objstart : OBJSTART LINE ;
+// objtrend : OBJTREND LINE ;
 
 // 词法
 
@@ -39,6 +40,7 @@ EQ : '=' ;
 LIBEND : 'LibEnd' ;
 LIBDEF : 'LibDef' ',' TEXT ;
 
+// OBJTREND : 'Obj'[tT][rR][eE][nN][dD] ;
 OBJGROUP : 'Obj'[gG][rR][oO][uU][pP] ;
 
 LAYEREND : 'LayerEnd' ;
