@@ -4,3 +4,4 @@ clean:
 	rm -f  *.java *.class
 	rm -f  *.js
 	rm -f  *.cs
+	rm -f  *.h *.cpp
